@@ -100,17 +100,9 @@ def compara(a, b):
 
 compara(qa,qa_infinita)
 compararacao = qa/qa_infinita
-print("comparacao qa/qa_infinita = ",round(compararacao, 2))
+print("comparacao qa/qa_infinita = ",round(compararacao*100, 2), "%")
 
 #CALCULOS EX7------------------------------------------------------------------------------------------
-
-# ---------------------------------------- deu errado ----------------------------------------------
-# l = 0
-# coisa = ((math.sinh(m*l) + (h/(m*k))*math.cosh(m*l))/(math.cosh(m*l) + (h/(m*k))*math.sinh(m*l)))
-# while (coisa != 1):
-#     l += 0.001
-#     coisa = ((math.sinh(m*l) + (h/(m*k))*math.cosh(m*l))/(math.cosh(m*l) + (h/(m*k))*math.sinh(m*l)))
-# ---------------------------------------- deu errado ----------------------------------------------
 
 l = 0.001
 tole = 0.001
@@ -136,7 +128,7 @@ def calcula_k_aleta_infinita(Tb, TA, TB, Tinf, h, p, ab, ka):
     return kb
 
 #CALCULOS EX2 ------------------------------------------------------------------------------------------
- 
+
 ka = 240
 TA = 273 + 75
 TB = 273 + 60
